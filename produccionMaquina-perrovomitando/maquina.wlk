@@ -11,7 +11,7 @@ method maximoValorDeProduccion() = registro.max()
 
 method produccionEsAcotada(n1, n2) = n1<=registro.min() and n2>=registro.max()
 
-method produccionesSuperioresA(cuanto) =  produccion.filter( { } )
+method produccionesSuperioresA(cuanto) =  registro.filter( {n => n > cuanto} )
 
 /* method produccionesSumando(n) = registro  */
 
@@ -19,5 +19,5 @@ method totalProducido()= registro.sum()
 
 method ultimoValorProducido()= registro.last()
 
-
+method valoresDeProduccionPares() = registro.filter({n=>}) 
 }
